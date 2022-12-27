@@ -27,5 +27,8 @@
   "dependencies": {
     "gm": "^1.25.0",
     "http-server": "^14.1.1"
+  },
+  "volta": {
+    "node": "18.12.1"
   }
 }
