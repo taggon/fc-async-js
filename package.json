@@ -2,10 +2,12 @@
   "name": "fc-async",
   "version": "1.0.0",
   "description": "FastCampus 세미나의 실습 코드",
-  "main": "index.js",
+  "main": "src/callback-hell/index.js",
   "scripts": {
     "anime": "http-server ./src/anime",
     "callback": "rm -rf src/callback-hell/resized && node ./src/callback-hell",
+    "users": "node ./src/users/index.mjs",
+    "users:browser": "http-server ./src/users",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/taggon/fc-async-js#readme",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "prettier": "^2.8.1"
   },
   "dependencies": {
