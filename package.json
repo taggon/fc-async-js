@@ -1,0 +1,32 @@
+{
+  "name": "fc-async",
+  "version": "1.0.0",
+  "description": "FastCampus 세미나의 실습 코드",
+  "main": "index.js",
+  "scripts": {
+    "anime": "http-server ./src/anime",
+    "callback": "rm -rf src/callback-hell/resized && node ./src/callback-hell",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taggon/fc-async-js.git"
+  },
+  "keywords": [
+    "examples"
+  ],
+  "author": "Taegon Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taggon/fc-async-js/issues"
+  },
+  "homepage": "https://github.com/taggon/fc-async-js#readme",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "gm": "^1.25.0",
+    "http-server": "^14.1.1"
+  }
+}

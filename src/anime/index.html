@@ -1,0 +1,40 @@
+<!doctype html>
+<html data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <title>애니메이션 검색</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="p-6">
+    <form id="form" class="container mx-auto mb-5">
+        <div class="form-control w-full flex flex-row justify-start">
+            <label class="input-group w-auto mr-2">
+                <span>검색어</span>
+                <input type="text" name="query" class="input input-bordered">
+            </label>
+            <button type="submit" class="btn btn-primary w-24">
+                검색
+            </button>
+        </div>
+    </form>
+    <div class="container flex min-h-[200px]">
+        <div class="empty">검색된 애니메이션이 없습니다.</div>
+        <div class="loading"><div class="lds-facebook"><div></div><div></div><div></div></div></div>
+        <div id="results" class="flex flex-row flex-wrap gap-5">
+        </div>
+
+        <template id="card">
+            <div class="card w-80 bg-base-100 shadow-md">
+                <figure class="aspect-square w-full"><img src="https://placeimg.com/400/225/arch" class="object-cover w-full h-full"></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Title</h2>
+                    <p class="desc">Description</p>
+                </div>
+            </div>
+        </template>
+    </div>
+    <script src="./main.js" type="module"></script>
+</div>
+</html>
