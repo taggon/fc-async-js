@@ -28,5 +28,5 @@ coverage
 # Dependency directories
 node_modules/
 
-./src/callback-hell/resized/
+src/callback-hell/resized/*.jpg
 .DS_Store

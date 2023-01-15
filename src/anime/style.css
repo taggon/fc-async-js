@@ -25,12 +25,13 @@
   display: none;
 }
 
-.desc {
+.card-body .desc {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex-grow: unset;
 }
 
 .lds-facebook {
